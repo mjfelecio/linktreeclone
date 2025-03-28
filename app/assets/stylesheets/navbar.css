@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(35, 244, 132);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin: 8px 24px;
+}
+
+.navbar-button {
+  padding: 5px;
+  margin: 12px 24px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: rgb(16, 121, 65);
+}
+
+.nav-link {
+  background-color: rgb(35, 244, 132);
+  font-size: large;
+  font-style: bold;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
