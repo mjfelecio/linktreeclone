@@ -65,6 +65,6 @@ class LinksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def link_params
-      params.expect(link: [ :title, :image, :url ])
+      params.expect(link: [ :website_title, :logo_url, :website_url ])
     end
 end

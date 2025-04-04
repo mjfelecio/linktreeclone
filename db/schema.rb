@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_04_063436) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_04_070100) do
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -23,9 +23,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_04_063436) do
   end
 
   create_table "links", force: :cascade do |t|
-    t.string "title"
-    t.string "image"
-    t.string "url"
+    t.string "website_title"
+    t.string "logo_url"
+    t.string "website_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

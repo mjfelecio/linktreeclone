@@ -14,9 +14,9 @@ class LinksTest < ApplicationSystemTestCase
     visit links_url
     click_on "New link"
 
-    fill_in "Image", with: @link.image
-    fill_in "Title", with: @link.title
-    fill_in "Url", with: @link.url
+    fill_in "Logo url", with: @link.logo_url
+    fill_in "Website title", with: @link.website_title
+    fill_in "Website url", with: @link.website_url
     click_on "Create Link"
 
     assert_text "Link was successfully created"
@@ -27,9 +27,9 @@ class LinksTest < ApplicationSystemTestCase
     visit link_url(@link)
     click_on "Edit this link", match: :first
 
-    fill_in "Image", with: @link.image
-    fill_in "Title", with: @link.title
-    fill_in "Url", with: @link.url
+    fill_in "Logo url", with: @link.logo_url
+    fill_in "Website title", with: @link.website_title
+    fill_in "Website url", with: @link.website_url
     click_on "Update Link"
 
     assert_text "Link was successfully updated"
