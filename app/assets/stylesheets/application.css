@@ -8,3 +8,25 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ :root {
+	/* Backgrounds */
+	--color-bg: #ECEFF1;
+	--color-surface: #FFFFFF;
+  
+	/* Layout Sections */
+	--color-header-footer: #333333;
+  
+	/* Buttons & Interactive Elements */
+	--color-primary: #4FC3F7;
+	--color-primary-hover: #0288D1;
+  
+	/* Text */
+	--color-text-primary: #212121;
+	--color-text-secondary: #757575;
+  }
+
+  body {
+	background-color: var(--color-bg);
+	color: var(--color-text-primary);
+  }
+  
