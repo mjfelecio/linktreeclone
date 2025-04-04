@@ -1,8 +1,19 @@
-<h1>Your Links, All in One Place!</h1>
-<p>Easily create a personalized link tree to share your social media, website, and more in a click.
-</p>
-<%if current_user %>
-  <%= link_to "View My Tree", current_user.tree%>
-<% else %>
-  <%= link_to "Create Your Own Tree Now", new_tree_path %>
-<%end %>
+<% stylesheet_link_tag("home")%>
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="header">Your Links,</h1>
+    <h1 class="header">All in One Place!</h1>
+    <p class="subheader">Easily create a personalized link tree to share your social media, website, and more in a click.
+    </p>
+    <%if current_user %>
+      <button class="home-button">
+        <%= link_to("View My Tree", current_user.tree, class:"hero-link")%>
+      </button>
+    <% else %>
+      <button class="home-button">
+        <%= link_to("Get Started", new_tree_path, class:"hero-link")%>
+      </button>
+    <%end %>
+  </div>
+  <%= image_tag("tree.jpg", class:"hero-image") %>
+</div>

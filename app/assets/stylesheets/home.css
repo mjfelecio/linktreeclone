@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 50px;
+  background-color: var(--color-surface);
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.header {
+  font-size: 60px;
+}
+
+.header:first-child {
+  color: var(--color-primary);
+}
+
+.subheader {
+  margin-top: 8px;
+  font-size: large;
+  font-weight: 400;
+}
+
+.home-button {
+  padding: 10px;
+  margin-top: 16px;
+  border-style: none;
+  border-radius: 5px;
+  background: var(--color-primary);
+}
+
+.hero-link {
+  font-size: 16px;
+  font-weight:600;
+  text-decoration: none;
+  color: var(--color-surface );
+}
+
+.hero-image {
+  width: 400px;
+}
