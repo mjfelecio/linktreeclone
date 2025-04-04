@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_04_070100) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_04_090124) do
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -32,11 +32,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_04_070100) do
 
   create_table "trees", force: :cascade do |t|
     t.string "name"
-    t.string "x"
-    t.string "instagram"
-    t.string "youtube"
-    t.integer "user_id"
-    t.string "style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
