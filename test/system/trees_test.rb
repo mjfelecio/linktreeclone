@@ -14,12 +14,7 @@ class TreesTest < ApplicationSystemTestCase
     visit trees_url
     click_on "New tree"
 
-    fill_in "Instagram", with: @tree.instagram
     fill_in "Name", with: @tree.name
-    fill_in "Style", with: @tree.style
-    fill_in "User", with: @tree.user_id
-    fill_in "X", with: @tree.x
-    fill_in "Youtube", with: @tree.youtube
     click_on "Create Tree"
 
     assert_text "Tree was successfully created"
@@ -30,12 +25,7 @@ class TreesTest < ApplicationSystemTestCase
     visit tree_url(@tree)
     click_on "Edit this tree", match: :first
 
-    fill_in "Instagram", with: @tree.instagram
     fill_in "Name", with: @tree.name
-    fill_in "Style", with: @tree.style
-    fill_in "User", with: @tree.user_id
-    fill_in "X", with: @tree.x
-    fill_in "Youtube", with: @tree.youtube
     click_on "Update Tree"
 
     assert_text "Tree was successfully updated"

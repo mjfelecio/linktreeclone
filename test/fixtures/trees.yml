@@ -2,16 +2,6 @@
 
 one:
   name: MyString
-  x: MyString
-  instagram: MyString
-  youtube: MyString
-  user_id: 1
-  style: MyString
 
 two:
   name: MyString
-  x: MyString
-  instagram: MyString
-  youtube: MyString
-  user_id: 1
-  style: MyString

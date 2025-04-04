@@ -17,7 +17,7 @@ class TreesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create tree" do
     assert_difference("Tree.count") do
-      post trees_url, params: { tree: { instagram: @tree.instagram, name: @tree.name, style: @tree.style, user_id: @tree.user_id, x: @tree.x, youtube: @tree.youtube } }
+      post trees_url, params: { tree: { name: @tree.name } }
     end
 
     assert_redirected_to tree_url(Tree.last)
@@ -34,7 +34,7 @@ class TreesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update tree" do
-    patch tree_url(@tree), params: { tree: { instagram: @tree.instagram, name: @tree.name, style: @tree.style, user_id: @tree.user_id, x: @tree.x, youtube: @tree.youtube } }
+    patch tree_url(@tree), params: { tree: { name: @tree.name } }
     assert_redirected_to tree_url(@tree)
   end
 
