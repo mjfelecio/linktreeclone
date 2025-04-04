@@ -9,7 +9,7 @@
       <button class="home-button">
       <%# TODO: Implement a way so that if the user has no tree then it will redirect
       to the new_tree page, if the user has a tree, then redirect the user to that tree. %>
-        <%= link_to("View My Tree", current_user.tree, class:"hero-link")%>
+        <%= link_to("View My Tree", current_user.tree || new_tree_path, class:"hero-link")%>
       </button>
     <% else %>
       <button class="home-button">
