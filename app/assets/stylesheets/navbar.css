@@ -24,8 +24,8 @@
 
 .nav-link {
   font-size: large;
-  font-style: bold;
+  font-weight: 700;
   text-decoration: none;
-  color: var(--color-text-primary);
+  color: var(--color-surface);
   padding: 8px;
 }
