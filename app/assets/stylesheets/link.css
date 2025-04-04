@@ -1,0 +1,35 @@
+.link-container {
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  border: 2px var(--color-text-primary) solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  width: 30%;
+  position: relative;
+}
+
+.link-logo {
+  margin: 2px 12px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+/* Directly centered on the card */
+.link-title-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-50%));
+}
+
+.link-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.link-url {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}

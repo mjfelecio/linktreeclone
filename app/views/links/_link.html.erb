@@ -1,17 +1,11 @@
-<div id="<%= dom_id link %>">
-  <p>
-    <strong>Website title:</strong>
-    <%= link.website_title %>
-  </p>
-
-  <p>
-    <strong>Logo url:</strong>
-    <%= link.logo_url %>
-  </p>
-
-  <p>
-    <strong>Website url:</strong>
-    <%= link.website_url %>
-  </p>
-
-</div>
+<% stylesheet_link_tag("link") %>
+<%= link_to link.website_url, class:"link-url" do%>
+  <div class="link-container" id="<%= dom_id link %>">
+    <%= image_tag(link.logo_url, alt: link.website_title, class: "link-logo") %>
+    <div class="link-title-container">
+      <p class="link-title">
+        <%= link.website_title %>
+      </p>
+    </div>
+  </div>
+<% end %>
