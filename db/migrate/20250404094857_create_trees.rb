@@ -2,11 +2,8 @@ class CreateTrees < ActiveRecord::Migration[8.0]
   def change
     create_table :trees do |t|
       t.string :name
-      t.string :x
-      t.string :instagram
-      t.string :youtube
-      t.integer :user_id
-      t.string :style
+      t.references :user, null: false, foreign_key: true
+      t.string :slug
 
       t.timestamps
     end

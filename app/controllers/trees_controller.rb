@@ -22,7 +22,7 @@ class TreesController < ApplicationController
 
   # POST /trees or /trees.json
   def create
-    @tree = Tree.new(tree_params)
+    @tree = current_user.build_tree(tree_params)
 
     respond_to do |format|
       if @tree.save
@@ -67,6 +67,6 @@ class TreesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tree_params
-      params.expect(tree: [ :name ])
+      params.require(:tree).permit(:name)
     end
 end
