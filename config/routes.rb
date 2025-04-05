@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+
+  get "trees/add_link", to: "trees#add_link", as: "add_link"
+
   devise_scope :user do
     get "/users/sign_out" => "devise/sessions#destroy"
   end
