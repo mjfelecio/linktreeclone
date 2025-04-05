@@ -15,7 +15,6 @@
   </div>
   <%= button_to("Add link", add_link_path, remote: true, method: :get, class: "btn") %>
   <div id="links-container">
-    <%= render "form", link: @link %>
   </div>
   <div>
     <%= form.submit %>

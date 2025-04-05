@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_04_094857) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_05_113831) do
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -28,6 +28,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_04_094857) do
     t.string "website_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "tree_id", null: false
+    t.index ["tree_id"], name: "index_links_on_tree_id"
   end
 
   create_table "trees", force: :cascade do |t|
@@ -51,5 +53,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_04_094857) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "links", "trees"
   add_foreign_key "trees", "users"
 end

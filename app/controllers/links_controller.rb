@@ -21,7 +21,9 @@ class LinksController < ApplicationController
 
   # POST /links or /links.json
   def create
-    @link = Link.new(link_params)
+    # Only create link for the tree of the current user
+    @tree = current_user.tree
+    @link = @tree.link.build(link_params)
 
     respond_to do |format|
       if @link.save
