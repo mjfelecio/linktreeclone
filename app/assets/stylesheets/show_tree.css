@@ -1,0 +1,50 @@
+.tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#tree {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+  height: 450px;
+  width: 35%;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.tree-header {
+	display: flex;
+	align-items: center;
+}
+
+.tree-name {
+	font-size: 30px;
+}
+
+.profile-pic {
+	width: 100px;
+	margin-right: 12px;
+}
+
+/* Tree Actions Styles */
+
+#action-container {
+	display: flex;
+	flex-direction: column;
+	border: solid 3px black;
+	width: fit-content;
+	padding: 3px;
+	gap: 3px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transform: translate(-3px, 20px);
+	align-self:self-start;
+}
+
+.action-button {
+	width: 20px;
+}
