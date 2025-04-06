@@ -1,6 +1,6 @@
-<div id="<%= dom_id tree %>">
-  <p>
-    <strong>Name:</strong>
-    <%= tree.name %>
-  </p>
+<% stylesheet_link_tag("show_tree") %>
+<div class="tree-container">
+  <div id="tree" id="<%= dom_id tree %>">
+    <h2><%= tree.name %></h2>
+  </div>
 </div>
