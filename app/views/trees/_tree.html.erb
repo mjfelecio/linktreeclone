@@ -5,6 +5,11 @@
       <img class="profile-pic" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kfZ_ddXoQdV76fI2c0eAwQAAAA%26pid%3DApi&f=1&ipt=02fb4241973f970ca26c42b6810b4537a27ece7b787c672c210ade68b37e5e37&ipo=images" alt="Profile Picture">
       <h2 class="tree-name"><%= tree.name %></h2>
     </div>
+    <div id="links">
+      <% @tree.link.each do |link| %>
+        <%= render link %>
+      <% end %>
+    </div>
   </div>
   <div id="action-container">
     <%= image_tag("edit.svg", class: "action-button")%>
