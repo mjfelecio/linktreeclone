@@ -32,10 +32,17 @@
 
 /* Tree Actions Styles */
 
-.action-container {
+#action-container {
 	display: flex;
 	flex-direction: column;
 	border: solid 3px black;
+	width: fit-content;
+	padding: 3px;
+	gap: 3px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transform: translate(-3px, 20px);
+	align-self:self-start;
 }
 
 .action-button {
